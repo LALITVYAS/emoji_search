@@ -4,24 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emoji Search Application</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="bg-gray-100 text-gray-800 ">
-    <div class="container mx-auto p-6 max-w-4xl text-center ">
-      <h1 class="text-3xl font-bold mb-4">Emojee - Emoji 🔍 Application</h1>
-      <p class="text-sm text-gray-600 mb-4">
+  <body class="bg-gray">
+    <div class="container">
+      <h1 class="title">Emojee - Emoji 🔍 Application</h1>
+      <p class="subtitle">
         Search for emojis and click to copy them to your clipboard!
       </p>
       <input
         type="text"
         id="search_field"
         placeholder="Search emojis..."
-        class="w-full p-3 border rounded-md focus:outline-none focus:ring focus:ring-blue-300 mb-6"
+        class="search-input"
       />
-      <div
-        id="emoji_container"
-        class="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-12 gap-4"
-      >
+      <div id="emoji_container" class="emoji-grid">
         <!-- Emojis will be dynamically inserted here -->
       </div>
     </div>
